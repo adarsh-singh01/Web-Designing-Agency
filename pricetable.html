@@ -1,0 +1,60 @@
+<html>
+    <body>
+    <div class="container">
+            <div id="basic">
+            <h2>Basic</h2><hr color="black">
+            <h1>Rs.299/Year</h1><hr color="black">
+            <p>Chat with Us</p>
+            <p>1 Website </p>
+            <p>ONLY 1 User</p>
+            <button>Sign Up</button>
+        </div>
+        <div id="prem">
+            <h2>Premium</h2><hr color="black">
+            <h1>Rs.899/Year</h1><hr color="black">
+            <p>Meet us in-person</p>
+            <p>6 Websites</p>
+            <p>10 Users</p>
+            <button>Sign Up</button>
+        </div>
+        <div id="stan">
+            <h2>Standard</h2><hr color="black">
+            <h1>Rs.499/Year</h1><hr color="black">
+            <p>Call with us</p>
+            <p>3 websites</p>
+            <p>4 Users</p>
+            <button>Sign Up</button>
+        </div>
+        
+    </div>
+
+<style>
+    body{background-color: aliceblue;}
+    .container{display:flex;gap:2rem;align-items: center;height: 80vh;justify-content: center;}
+    #basic{ background-color: brown ;border-radius: 30px;padding:20px;text-align: center;}
+    #stan{background-color: silver;border-radius: 30px;padding:20px;text-align: center;}
+    #prem{align-self:self-start ;background-color: gold;border-radius: 30px;padding:20px;text-align: center;box-shadow:10px 20px #999;}
+    
+    
+    
+    div > *{flex-basis: 100px;}
+    h1{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 3rem;color: beige;}
+    h2{font-size: 2rem;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif}
+    button{background-color: orange;color: white;border-radius: 10px;box-shadow:0 3px #999;padding: 10px;}
+    p{font-family:Arial, Helvetica, sans-serif;font-size: 1rem;}
+
+    @media (max-width:1000px) {
+                #prem{align-self: center;}
+                .container{flex-direction: column;
+                    height:fit-content;}
+                div > *{flex-basis: 100px;}
+                }
+    /*.container{display:flex;gap:1rem;justify-content: center;align-items: center;height:100vh}
+    .box{background-color: aquamarine;padding:1rem;flex: 1;max-width:400px;}
+     @media(max-width:680px){
+        .container{flex-direction: column;height:1000px}
+     }*/
+</style>
+        
+    </body>
+</html >
